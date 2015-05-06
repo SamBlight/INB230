@@ -1,0 +1,42 @@
+body 
+{
+	background-color: cornflowerblue;
+}
+	
+h1 
+{
+	color: lightblue;
+	margin-left: 20px;
+}
+
+#title
+{
+	float: left;
+	width: 70%;	
+	background-color: #297acc;
+	padding: 25px 0px;
+}
+
+#dropdownbox
+{
+	float: right;
+	width: 30%;
+	background-color: #297acc;
+	padding: 25px 0px;
+}
+
+
+
+#mainbody
+{
+	float: left;
+	width: 100%;
+}
+
+#footer
+{
+	float: left;
+	width: 100%;
+	background-color: white;
+	padding: 25px
+}
