@@ -1,0 +1,7 @@
+function submitfunc() {
+    var checkfirst = document.forms["newaccount"][firstname.value];
+    var checklast = document.forms["newaccount"][lastname.value];
+    if (checkfirst == null || checkfirst == "") {
+        alert("Name must be filled out");
+    }
+}
