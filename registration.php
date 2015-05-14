@@ -4,16 +4,16 @@
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@TennisCourtLocator" />
-		<meta name="twitter:title" content="Tennis Court Locations" />
-		<meta name="twitter:description" content="Click to view the court" />
+		<meta name="twitter:title" content="Register" />
+		<meta name="twitter:description" content="Registering for an account lets you rate tennis courts and leave reviews." />
 		<meta name="twitter:image" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg" />
 		<meta name="twitter:url" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg" />
-		<meta property="og:title" content="Tennis Court Locations"/>
+		<meta property="og:title" content="Register"/>
 		<meta property="og:image" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg"/>
 		<meta property="og:url" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg"/>
-		<meta property="og:description" content="This is a website which does this that and everything, but mainly only shows tennis courts"/>
+		<meta property="og:description" content="Registering for an account lets you rate tennis courts and leave reviews."/>
 		<meta property="og:type" content="article"/>
-		<title>Tennis Court Locator</title>
+		<title>Register</title>
 	</head>
 	<body>
 	

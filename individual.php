@@ -1,6 +1,18 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
+		<!-- Once we get PHP setup, we'll need to get this individualised for each entry-->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@TennisCourtLocator" />
+		<meta name="twitter:title" content="Tennis Court Locations" />
+		<meta name="twitter:description" content="Click to view this Tennis Court!" />
+		<meta name="twitter:image" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg" />
+		<meta name="twitter:url" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg" />
+		<meta property="og:title" content="Tennis Court Locations"/>
+		<meta property="og:image" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg"/>
+		<meta property="og:url" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg"/>
+		<meta property="og:description" content="Click to view this Tennis Court!"/>
+		<meta property="og:type" content="article"/>
 		<title>Tennis Court Locator</title>
 	</head>
 	<body>
