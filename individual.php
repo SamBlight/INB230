@@ -41,6 +41,9 @@
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		
 		</div>
+		<div id="mainbody">
+			
+		</div>
 		<div id="footer">
 		<p>Copyright of blah blah blah, contact details here</p>
 		</div>

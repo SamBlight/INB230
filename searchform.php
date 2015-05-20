@@ -35,16 +35,16 @@
 		<div id="mainbody">
 		<h2>Search</h2>
 		<p>
-		<form action="searchresults.html">
+		<form action="searchform.php?go" id="searchform" method="post">
 			Search for:<br>
-			<select>
+			<select name="criteria">
 				<option value="Suburb">Suburb</option>
 				<option value="Name">Name</option>
-				<option value="Rating">Rating</option>
 			</select>
 			<input type="text" name="search">
 			<input type="submit" name="Submit">
 		</form>
+		
 		</div>
 		<div id="footer">
 		<p>Copyright of blah blah blah, contact details here</p>
