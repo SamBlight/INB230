@@ -30,12 +30,8 @@
 		<div id="mainbody">
 		<h2>Search</h2>
 		<p>
-		<form action="searchform.php?go" id="searchform" method="post">
+		<form action="searchresults.php" id="searchform" method="post">
 			Search for:<br>
-			<select name="criteria">
-				<option value="Suburb">Suburb</option>
-				<option value="Name">Name</option>
-			</select>
 			<input type="text" name="search">
 			<input type="submit" name="Submit">
 		</form>

@@ -26,51 +26,39 @@
 				<?php 
 		include 'navigation.php'; ?>
 		</div>
-
 		<div id="mainbody">
-			<h2> Search Results</h2>
-			<p>
-		<table>
-			<tr>
+			<?php
+echo $_POST["search"];
+$term=$_POST["search"];
+$user="root";
+$pass="root";
+$db=new PDO('mysql:host=localhost;dbname=assignment', $user, $pass);
+		echo "<table>\n";
+		echo "<tr>
 				<td>Name</td>
 				<td>Suburb</td>
-				<td>Rating</td>
 				<td>Address</td>
 				<td>Number of Tennis Courts</td>
-				<td>Booking Details</td>
-			</tr>
-			<tr>
-				<td><a href="individual.html">Algester State School</a></td>
-				<td>Algester</td>
-				<td>****</td>
-				<td>19 Endiandra Street, Algester</td>
-				<td>2</td>
-				<td>07 3712 5111</td>
-			</tr>
-			<tr>
-				<td><a href="individual.html">Junction Park State School</a></td>
-				<td>Annerley</td>
-				<td>***</td>
-				<td>50 Waldheim Street, Annerley</td>
-				<td>2</td>
-				<td>Email Junction Park Tennis Club - junctionparktennis@gmail.com</td>
-			</tr>	
-			<tr>
-				<td><a href="individual.html">Ascot State School</a></td>
-				<td>Ascot</td>
-				<td>**</td>
-				<td>Reeve Street, Ascot</td>
-				<td>2</td>
-				<td>07 3326 9333</td>
-			</tr>	
-			<tr>
-				<td><a href="individual.html">Ashgrove State School</a></td>
-				<td>Ashgrove</td>
-				<td>****</td>
-				<td>Glory Street, Ashgrove</td>
-				<td>2</td>
-				<td>07 3366 4836</td>
-			</tr>
+			</tr>\n";
+$stmt = $db->query('SELECT * FROM tennis_courts WHERE Suburb LIKE \'%'.$term.'%\' OR Venue LIKE \'%' . $term . '%\'');
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			$ID=$row['ID'];
+			$Venue=$row['Venue'];
+			$Coordinates=$row['Coordinates'];
+			$Suburb=$row['Suburb'];
+			$Address=$row['Address'];
+			$NumbCourts=$row['Number of tennis courts'];
+			$BookingDetails=$row['Booking details'];
+			echo "<tr>\n";
+			echo "<td>" . "<a href=\"search.php?id=$ID\">". $Venue . "</a></td>\n";
+			echo "<td>" . $Suburb . "</td>\n";
+			echo "<td>" . $Address . "</td>\n";
+			echo "<td>" . $NumbCourts . "</td>\n";
+			echo "</tr>\n";
+}
+?>
+
+		
 				
 		
 		</div>
