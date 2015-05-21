@@ -23,13 +23,8 @@
 		<!--Navigation section-->
 		<div id="dropdownbox">
 		<h3>Navigation</h3>
-		<select onchange="window.location.assign(this.value,'','');">
-			<option value=""></option>
-			<option value="registration.html">User Registration</option>
-			<option value="searchform.html">Search</option>
-			<option value="aboutus.html">About Us</option>
-			<option value="login.html">Login</option>
-		</select>
+				<?php 
+		include 'navigation.php'; ?>
 		</div>
 
 		<div id="mainbody">
@@ -45,6 +40,8 @@
 			<input type="submit" name="Submit">
 		</form>
 		
+		<?php
+		include 'search_go.php';?>
 		</div>
 		<div id="footer">
 		<p>Copyright of blah blah blah, contact details here</p>
