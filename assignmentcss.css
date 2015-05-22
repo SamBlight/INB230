@@ -33,6 +33,12 @@ h1
 	width: 100%;
 }
 
+table, td, th
+{
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
 #footer
 {
 	float: left;

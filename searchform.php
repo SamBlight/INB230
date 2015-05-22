@@ -28,16 +28,32 @@
 		</div>
 
 		<div id="mainbody">
-		<h2>Search</h2>
+		<h2>Search by:</h2>
 		<p>
-		<form action="searchresults.php" id="searchform" method="post">
-			Search for:<br>
+		Suburb<br>
+		<form action="searchresults.php?type=suburb" id="suburb" method="post">
+			<select name="suburb">
+				<?php
+				require("connect.php");
+				$suburblist=$db->query('SELECT DISTINCT Suburb FROM tennis_courts');
+				while ($row = $suburblist->fetch(PDO::FETCH_ASSOC)) {
+					$suburb=$row['Suburb'];
+					echo "<option VALUE=\"".$suburb."\">".$suburb."</option>\n";
+				}
+
+				?>
+			</select>
+			<input type="submit" name="Submit">
+		</form>
+
+
+		<form action="searchresults.php?type=text" id="searchform" method="post">
+			Name<br>
 			<input type="text" name="search">
 			<input type="submit" name="Submit">
 		</form>
-		
-		<?php
-		include 'search_go.php';?>
+		<form action="searchresults.php?type=geo" id="geo" method="post">
+			Geographical Location
 		</div>
 		<div id="footer">
 		<p>Copyright of blah blah blah, contact details here</p>

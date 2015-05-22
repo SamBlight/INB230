@@ -28,10 +28,7 @@
 		</div>
 		<div id="mainbody">
 			<?php
-$term=$_POST["search"];
-$user="root";
-$pass="root";
-$db=new PDO('mysql:host=localhost;dbname=assignment', $user, $pass);
+		require("connect.php");
 		echo "<table>\n";
 		echo "<tr>
 				<td><h4>Name</h4></td>
@@ -39,8 +36,35 @@ $db=new PDO('mysql:host=localhost;dbname=assignment', $user, $pass);
 				<td><h4>Address</h4></td>
 				<td><h4>Number of Tennis Courts</h4></td>
 			</tr>\n";
-$stmt = $db->query('SELECT * FROM tennis_courts WHERE Suburb LIKE \'%'.$term.'%\' OR Venue LIKE \'%' . $term . '%\'');
-while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			if($_GET["type"] == "suburb")
+			{
+				$term=$_POST["suburb"];
+				$stmt = $db->query('SELECT * FROM tennis_courts WHERE Suburb = \''.$term.'\'');
+
+			}
+
+			elseif($_GET["type"] == "text")
+			{
+				$term=$_POST["search"];
+				$stmt = $db->query('SELECT * FROM tennis_courts WHERE Suburb LIKE \'%'.$term.'%\' OR Venue LIKE \'%' . $term . '%\'');
+
+			}
+			/*elseif($_GET["type"] == "geo")
+			{
+				echo "<p id=\"errorbox\"></p>";
+				echo "<script>";
+				echo "var x = document.getElementById(\"errorbox\")";
+				echo "function getLocation() {
+					if (navigator.geolocation) {
+						navigator.geolocation.getCurrentPosition(showPosition, showError);
+					} else {
+						x.innerHTML = \"Geolocation is not supported by this browser.\";
+					}
+				}";	
+			}*/
+
+
+		while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$ID=$row['ID'];
 			$Venue=$row['Venue'];
 			$Coordinates=$row['Coordinates'];
