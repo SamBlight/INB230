@@ -28,13 +28,33 @@
 		include 'navigation.php'; ?>
 		</div>
 
-		<div id="mainbody">
-		<h3>Individual data display title</h3>
-		<p>Data here for the individual entries</P>
-		<p>Name<br>Rating<br>Other Details</p>
-		<h4>Map of Location</h4>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		
+		<div id="mainbody" itemscope itemtype="http://schema.org/Place">
+		<?php
+
+$id=$_GET["id"];
+$user="root";
+$pass="root";
+$db=new PDO('mysql:host=localhost;dbname=assignment', $user, $pass);
+$stmt=$db->query('SELECT * FROM tennis_courts WHERE Id='.$id);
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			$ID=$row['ID'];
+			$Venue=$row['Venue'];
+			$Coordinates=$row['Coordinates'];
+			$Suburb=$row['Suburb'];
+			$Address=$row['Address'];
+			$NumbCourts=$row['Number of tennis courts'];
+			$BookingDetails=$row['Booking details'];
+			echo "<div itemprop=\"name\"><h3>".$Venue."</h3>\n</div>\n";
+			echo "<div itemprop=\"address\" itemscope itemtype=\"http://schema.org/PostalAddress\"><h4>Location: </h4>" . $Address . "</div>\n";
+			echo "<meta itemprop=\"address\" content=\"".$Address."\">";
+			echo "<meta itemprop=\"streetAddress\" content=\"".$Address."\">";
+			echo "<meta itemprop=\"addressLocality\" content=\"".$Suburb."\">";
+			echo "<meta itemprop=\"addressRegion\" content=\"Queensland\">";
+			echo "<meta itemprop=\"geo\" content=\"".$Coordinates."\">";
+			echo "<p><h4>Number of Courts: </h4>" . $NumbCourts . "</p>\n";
+			echo "<p><h4>Booking Details: </h4>".$BookingDetails."</p>\n";
+		}
+		?>
 		</div>
 		<div id="mainbody">
 			

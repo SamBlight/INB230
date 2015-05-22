@@ -28,17 +28,16 @@
 		</div>
 		<div id="mainbody">
 			<?php
-echo $_POST["search"];
 $term=$_POST["search"];
 $user="root";
 $pass="root";
 $db=new PDO('mysql:host=localhost;dbname=assignment', $user, $pass);
 		echo "<table>\n";
 		echo "<tr>
-				<td>Name</td>
-				<td>Suburb</td>
-				<td>Address</td>
-				<td>Number of Tennis Courts</td>
+				<td><h4>Name</h4></td>
+				<td><h4>Suburb</h4></td>
+				<td><h4>Address</h4></td>
+				<td><h4>Number of Tennis Courts</h4></td>
 			</tr>\n";
 $stmt = $db->query('SELECT * FROM tennis_courts WHERE Suburb LIKE \'%'.$term.'%\' OR Venue LIKE \'%' . $term . '%\'');
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -50,7 +49,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$NumbCourts=$row['Number of tennis courts'];
 			$BookingDetails=$row['Booking details'];
 			echo "<tr>\n";
-			echo "<td>" . "<a href=\"search.php?id=$ID\">". $Venue . "</a></td>\n";
+			echo "<td>" . "<a href=\"individual.php?id=$ID\">". $Venue . "</a></td>\n";
 			echo "<td>" . $Suburb . "</td>\n";
 			echo "<td>" . $Address . "</td>\n";
 			echo "<td>" . $NumbCourts . "</td>\n";
