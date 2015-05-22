@@ -12,8 +12,8 @@ TO-DO LIST
 6. Comments everywhere
 7. Geolocation on Search form
 8. Search options on Search form
-	8.1 Suburb selected by dropdown box
-	8.2 Name using text box
+	8.1 Suburb selected by dropdown box <done>
+	8.2 Name using text box <done>
 	8.3 Rating
 	8.4 Location based on HTML5 geolocation (select distance close by)
-9. Only implement PDO connection once (make separate connection script.inc)
+9. Only implement PDO connection once (make separate connection script.inc) <done>
