@@ -57,7 +57,29 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 		?>
 		</div>
 		<div id="mainbody">
-			
+			<h2>Reviews</h2>
+			<table>
+				<tr>
+					<td>Reviewer</td>
+					<td>Rating</td>
+					<td>Review</td>
+				</tr>
+			<?php
+			require("connect.php");
+			$stmt1=$db->query('SELECT * FROM reviews WHERE Court = \''.$Venue.'\'');
+			while($displayrow = $stmt1->fetch(PDO::FETCH_ASSOC))
+			{
+				$user=$displayrow['User'];
+				$rating=$displayrow['Rating'];
+				$review=$displayrow['Review'];
+				echo "<tr>\n";
+				echo "<td>".$user."</td>\n";
+				echo "<td>".$rating." out of 10</td>\n";
+				echo "<td>".$review."</td>\n";
+				echo "</tr>";
+			}
+			?>
+
 		</div>
 		<div id="footer">
 		<p>Copyright of blah blah blah, contact details here</p>
