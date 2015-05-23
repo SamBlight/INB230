@@ -13,6 +13,8 @@
 		<meta property="og:url" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg"/>
 		<meta property="og:description" content="Registering for an account lets you rate tennis courts and leave reviews."/>
 		<meta property="og:type" content="article"/>
+
+		<meta name="viewport" content="width=device-width">
 		<title>Register</title>
 	</head>
 	<body>

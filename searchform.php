@@ -11,6 +11,7 @@
 		<meta property="og:url" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg"/>
 		<meta property="og:description" content="Search Brisbane Tennis Courts"/>
 		<meta property="og:type" content="article"/>
+		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
 		<title>Search</title>
 	</head>

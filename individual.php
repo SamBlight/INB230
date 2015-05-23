@@ -13,6 +13,8 @@
 		<meta property="og:url" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg"/>
 		<meta property="og:description" content="Click to view this Tennis Court!"/>
 		<meta property="og:type" content="article"/>
+
+		<meta name="viewport" content="width=device-width">
 		<title>Tennis Court Locator</title>
 	</head>
 	<body>
