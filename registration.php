@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<script src="validate.js"></script>
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 320px)" href="mediacss.css">
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@TennisCourtLocator" />

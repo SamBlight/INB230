@@ -13,6 +13,7 @@
 		<meta property="og:type" content="article"/>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 320px)" href="mediacss.css">
 		<title>Search</title>
 	</head>
 	<body>

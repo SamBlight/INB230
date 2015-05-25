@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 320px)" href="mediacss.css">
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
 		<title>About Us</title>
 		<meta name="twitter:card" content="summary" />
