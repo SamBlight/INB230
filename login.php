@@ -40,6 +40,7 @@
 			<input type="password" name="password"><br>
 			<input type="submit" name="Submit">
 		</form>
+		New user? <a href ="register.php"> REGISTER HERE! </a>
 		</div>
 		<div id="footer">
 		<p>Copyright of blah blah blah, contact details here</p>
