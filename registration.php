@@ -35,6 +35,8 @@
 		<p>
 		<h2>User Registration</h2>
 		<form name="newaccount" onsubmit="return submitfunc()" method ="post">
+			Username:<br>
+			<input type="text" name="username"><br>
 			First name:<br>
 			<input type="text" name="firstname"><br>
 			Last name:<br>
