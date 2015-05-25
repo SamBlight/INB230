@@ -51,19 +51,12 @@
 				$stmt = $db->query('SELECT * FROM tennis_courts WHERE Suburb LIKE \'%'.$term.'%\' OR Venue LIKE \'%' . $term . '%\'');
 
 			}
-			/*elseif($_GET["type"] == "geo")
+
+			elseif($_GET["type"] == "rating")
 			{
-				echo "<p id=\"errorbox\"></p>";
-				echo "<script>";
-				echo "var x = document.getElementById(\"errorbox\")";
-				echo "function getLocation() {
-					if (navigator.geolocation) {
-						navigator.geolocation.getCurrentPosition(showPosition, showError);
-					} else {
-						x.innerHTML = \"Geolocation is not supported by this browser.\";
-					}
-				}";	
-			}*/
+				$term=$_POST["rating"];
+				$stmt=$db->query('SELECT t.*, AVG\(r.Rating\) AS AverageRating FROM tennis_courts t INNER JOIN reviews r ON t.Venue=r.Court WHERE AverageRating >= '.$term.'');
+			}
 
 
 		while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {

@@ -54,8 +54,23 @@
 			<input type="text" name="search">
 			<input type="submit" name="Submit">
 		</form>
-		<form action="searchresults.php?type=geo" id="geo" method="post">
-			Geographical Location
+		<form action="searchresults.php?type=rating" id="rating" method="post">
+			Rating<br>
+			<select name="rating">
+					<option name="1">1</option>
+					<option name="2">2</option>
+					<option name="3">3</option>
+					<option name="4">4</option>
+					<option name="5">5</option>
+					<option name="6">6</option>
+					<option name="7">7</option>
+					<option name="8">8</option>
+					<option name="9">9</option>
+					<option name="10">10</option>
+			</select> or higher.
+			<input type="submit" name="Submit">
+
+		</form>
 		</div>
 		<div id="footer">
 		<p>Copyright of blah blah blah, contact details here</p>
