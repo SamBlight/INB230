@@ -27,7 +27,7 @@
 		<div id="dropdownbox">
 		<h3>Navigation</h3>
 		<?php 
-		include 'navigation.php'; ?>
+		include 'navigation.inc'; ?>
 		</div>
 
 		<div id="mainbody">
@@ -37,6 +37,6 @@
 		<p>Email Address: <a href="mailto:tripledefenderbuilds4lyf@gmail.com">tripledefenderbuilds4lyf@gmail.com</a></p>
 		
 		</div>
-		<?php include "footer.php";	?>
+		<?php include "footer.inc";	?>
 	</body>
 </html>

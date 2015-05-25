@@ -28,7 +28,7 @@
 		<div id="dropdownbox">
 		<h3>Navigation</h3>
 		<?php 
-		include 'navigation.php'; ?>
+		include 'navigation.inc'; ?>
 		</div>
 
 		<div id="mainbody" itemscope itemtype="http://schema.org/Place">
@@ -104,6 +104,6 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 
 		</div>
-		<?php include "footer.php";	?>
+		<?php include "footer.inc";	?>
 	</body>
 </html>

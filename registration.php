@@ -28,7 +28,7 @@
 		<div id="dropdownbox">
 		<h3>Navigation</h3>
 		<?php 
-		include 'navigation.php'; ?>
+		include 'navigation.inc'; ?>
 		</div>
 
 		<div id="mainbody">
@@ -52,6 +52,6 @@
 			<input type="submit" name="Submit">
 		</form>
 		</div>
-		<?php include "footer.php";	?>
+		<?php include "footer.inc";	?>
 	</body>
 </html>
