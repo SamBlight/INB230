@@ -55,7 +55,7 @@
 			elseif($_GET["type"] == "rating")
 			{
 				$term=$_POST["rating"];
-				$stmt=$db->query('SELECT t.*, AVG\(r.Rating\) AS AverageRating FROM tennis_courts t INNER JOIN reviews r ON t.Venue=r.Court WHERE AverageRating >= '.$term.'');
+				$stmt=$db->query('SELECT t.* FROM tennis_courts t INNER JOIN reviews r ON t.Venue=r.Court HAVING AVG(r.Rating) >= '.$term);
 			}
 
 
@@ -81,8 +81,6 @@
 		
 		</div>
 		<!--Cant figure out why this displays above the table-->
-		<div id="footer">
-		<p>Copyright of blah blah blah, contact details here</p>
-		</div>
+		<?php include "footer.php";	?>
 	</body>
 </html>

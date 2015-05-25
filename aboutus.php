@@ -37,8 +37,6 @@
 		<p>Email Address: <a href="mailto:tripledefenderbuilds4lyf@gmail.com">tripledefenderbuilds4lyf@gmail.com</a></p>
 		
 		</div>
-		<div id="footer">
-		<p>Copyright of blah blah blah, contact details here</p>
-		</div>
+		<?php include "footer.php";	?>
 	</body>
 </html>

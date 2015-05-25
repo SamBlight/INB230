@@ -42,8 +42,6 @@
 		</form>
 		New user? <a href ="register.php"> REGISTER HERE! </a>
 		</div>
-		<div id="footer">
-		<p>Copyright of blah blah blah, contact details here</p>
-		</div>
+		<?php include "footer.php";	?>
 	</body>
 </html>
