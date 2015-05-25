@@ -1,7 +1,7 @@
 function submitfunc() {
 
 	// variables 
-    var x = document.forms["newaccount"]["firstname"].value;
+    var checkfirst = document.forms["newaccount"]["firstname"].value;
     var checklast = document.forms["newaccount"]["lastname"].value;
     var checkemail = document.forms["newaccount"]["emailaddress"].value;
  	var checkphone = document.forms["newaccount"]["phonenum"].value;
@@ -12,7 +12,7 @@ function submitfunc() {
 	//var emailendY = checkemail.search("@yahoo.com.au");
 
     // first name checks
-    if (x == null || x == "") {
+    if (checkfirst == null || checkfirst == "") {
         alert("First Name must be filled out");
         return false;
     } 
@@ -47,24 +47,3 @@ function submitfunc() {
     	return false;
     } 
 }
-
-/*function submitfunclogin() {
-
-    // variables 
-    var checkemail = document.forms["checkaccount"]["emailaddress"].value;
-    var checkpass1 = document.forms["checkaccount"]["password"].value;
-    
-    // email checks
-    else if (checkemail == null || checkemail == "") {
-        alert("Email must be filled out");
-        return false;
-    } /*else if (emailendG != "@gmail.com") {
-        alert("Not a valid Email address");
-        return false;
-    } 
-    // password checks
-    else if (checkpass1 == null || checkpass1 == "") {
-        alert("Password must be filled out");
-        return false;
-    } 
-}*/
