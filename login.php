@@ -3,6 +3,7 @@
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
 		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 320px)" href="mediacss.css">
 		<title>Login</title>
+		<script src="validateLogin.js"></script>
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@TennisCourtLocator" />
 		<meta name="twitter:title" content="Login" />
@@ -28,12 +29,12 @@
 		<h3>Navigation</h3>
 		<?php 
 		include 'navigation.php'; ?>
-		</div>
+		</div>	
 
 		<div id="mainbody">
 		<p>
 		<h2>Login</h2>
-		<form>
+		<form name="checkaccount" onsubmit="return submitfunclogin()" method ="post">
 			Email address:<br>
 			<input type="text" name="emailaddress"><br>
 			Password:<br>

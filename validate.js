@@ -46,3 +46,24 @@ function submitfunc() {
     	return false;
     } 
 }
+
+function submitfunclogin() {
+
+    // variables 
+    var checkemail = document.forms["checkaccount"]["emailaddress"].value;
+    var checkpass1 = document.forms["checkaccount"]["password"].value;
+    
+    // email checks
+    else if (checkemail == null || checkemail == "") {
+        alert("Email must be filled out");
+        return false;
+    } /*else if (emailendG != "@gmail.com") {
+        alert("Not a valid Email address");
+        return false;
+    } */
+    // password checks
+    else if (checkpass1 == null || checkpass1 == "") {
+        alert("Password must be filled out");
+        return false;
+    } 
+}
