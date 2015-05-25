@@ -1,7 +1,7 @@
 function submitfunc() {
 
 	// variables 
-    var checkfirst = document.forms["newaccount"]["firstname"].value;
+    var x = document.forms["newaccount"]["firstname"].value;
     var checklast = document.forms["newaccount"]["lastname"].value;
     var checkemail = document.forms["newaccount"]["emailaddress"].value;
  	var checkphone = document.forms["newaccount"]["phonenum"].value;
@@ -12,7 +12,7 @@ function submitfunc() {
 	//var emailendY = checkemail.search("@yahoo.com.au");
 
     // first name checks
-    if (checkfirst == null || checkfirst == "") {
+    if (x == null || x == "") {
         alert("First Name must be filled out");
         return false;
     } 
@@ -25,29 +25,30 @@ function submitfunc() {
     else if (checkemail == null || checkemail == "") {
     	alert("Email must be filled out");
     	return false;
-    } /*else if (emailendG != "@gmail.com") {
-    	alert("Not a valid Email address");
-    	return false;
-    } */
+    } 
     // phone checks
+    
     else if (checkphone == null || checkphone == "") {
     	alert("Phone number must be filled out");
     	return false;
     } 
     // password checks
+    
     else if (checkpass1 == null || checkpass1 == "") {
     	alert("Password must be filled out");
     	return false;
-    } else if (checkpass2 == null || checkpass2 == "") {
+
+    }else if (checkpass2 == null || checkpass2 == "") {
     	alert("Password Two must be filled out");
     	return false;
-    } else if (checkpass1 != checkpass2) {
+
+    } if (checkpass1 !== checkpass2) {
     	alert("Passwords do not match");
     	return false;
     } 
 }
 
-function submitfunclogin() {
+/*function submitfunclogin() {
 
     // variables 
     var checkemail = document.forms["checkaccount"]["emailaddress"].value;
@@ -60,10 +61,10 @@ function submitfunclogin() {
     } /*else if (emailendG != "@gmail.com") {
         alert("Not a valid Email address");
         return false;
-    } */
+    } 
     // password checks
     else if (checkpass1 == null || checkpass1 == "") {
         alert("Password must be filled out");
         return false;
     } 
-}
+}*/
