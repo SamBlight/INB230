@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 320px)" href="mediacss.css">
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
 		<!-- Once we get PHP setup, we'll need to get this individualised for each entry-->
 		<meta name="twitter:card" content="summary" />

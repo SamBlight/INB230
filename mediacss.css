@@ -1,0 +1,52 @@
+@media screen and (min-width: 320px) {
+body 
+{
+	background-color: cornflowerblue;
+}
+	
+h1 
+{
+	color: lightblue;
+	margin-left: 20px;
+}
+
+#title
+{
+	float: left;
+	width: 100%;	
+	background-color: #297acc;
+	padding: 15px 0px;
+}
+
+#dropdownbox
+{
+	float: right;
+	width: 100%;
+	background-color: #297acc;
+	padding: 25px 0px;
+}
+
+
+
+#mainbody
+{
+	float: left;
+	width: 100%;
+	padding: 10px 0px;
+}
+
+table, td, th
+{
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+#footer
+{
+	float: left;
+	width: 100%;
+	background-color: white;
+	padding: 25px
+}
+
+}
