@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 	<head>
 		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 320px)" href="mediacss.css">
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
@@ -14,11 +14,10 @@
 		<meta property="og:url" content="https://villadukuh.files.wordpress.com/2011/05/tennisview3.jpg"/>
 		<meta property="og:description" content="About Tennis Court Locator"/>
 		<meta property="og:type" content="article"/>
-
 		<meta name="viewport" content="width=device-width">
 	</head>
 	<body>
-	
+		<!--The title-->
 		<div id="title">
 		<h1>Tennis Court Locator</h1>
 		</div>

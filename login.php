@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
@@ -31,6 +32,7 @@
 		include 'navigation.inc'; ?>
 		</div>	
 
+		<!--The code for the username and password forms-->
 		<div id="mainbody">
 		<p>
 		<h2>Login</h2>

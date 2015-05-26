@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" media="only screen and (max-width: 320px)" href="mediacss.css">
@@ -32,8 +33,8 @@
 		</div>
 
 		<div id="mainbody" itemscope itemtype="http://schema.org/Place">
+		<!--sql query for gathering the information about the requested site-->
 		<?php
-
 $id=$_GET["id"];
 $user="root";
 $pass="root";
@@ -82,7 +83,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				echo "</tr>";
 			}
 			?>
-
+			<!-- options for the ratings -->
 			<form id="review" method="post">
 				Review:
 				<input type="text" name="review"><br>

@@ -1,3 +1,4 @@
+<!--The code for the footer-->
 <?php
 echo "<div id=\"footer\">
 		<p>Copyright of Dean McAndrew and Samuel Blight. All Rights Reserved.

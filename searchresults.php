@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="assignmentcss.css">
@@ -28,6 +29,7 @@
 				<?php 
 		include 'navigation.inc'; ?>
 		</div>
+		<!--code to return the area searched for-->
 		<div id="mainbody">
 			<?php
 		require("connect.php");
@@ -38,6 +40,7 @@
 				<td><h4>Address</h4></td>
 				<td><h4>Number of Tennis Courts</h4></td>
 			</tr>\n";
+			//searches for the suburb if it was the selected option
 			if($_GET["type"] == "suburb")
 			{
 				$term=$_POST["suburb"];
@@ -45,6 +48,7 @@
 
 			}
 
+			//searches for the type of field if it was the selected option
 			elseif($_GET["type"] == "text")
 			{
 				$term=$_POST["search"];
@@ -52,6 +56,7 @@
 
 			}
 
+			//searches for the rating if it was the selected option
 			elseif($_GET["type"] == "rating")
 			{
 				$term=$_POST["rating"];

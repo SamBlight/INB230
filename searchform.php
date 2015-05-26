@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="twitter:card" content="summary" />
@@ -33,6 +34,7 @@
 		<h2>Search by:</h2>
 		<p>
 		Suburb<br>
+		<!--Code to search through the database for the requested form--> 
 		<form action="searchresults.php?type=suburb" id="suburb" method="post">
 			<select name="suburb">
 				<?php

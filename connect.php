@@ -1,3 +1,5 @@
+
+<!--The process used to connect to the server-->
 <?php
 		$user="root";
 		$pass="root";

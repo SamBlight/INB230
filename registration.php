@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<script src="validate.js"></script>
@@ -34,6 +35,7 @@
 		<div id="mainbody">
 		<p>
 		<h2>User Registration</h2>
+		<!--Forms for registration-->
 		<form name="newaccount" action="login.php" onsubmit="return submitfunc()" method ="post">
 			Username:<br>
 			<input type="text" name="username"><br>
